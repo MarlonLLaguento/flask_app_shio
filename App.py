@@ -1,10 +1,15 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_mysqldb import MySQL
+import os
 
 app = Flask(__name__)
+#añadir la ruta de la carpeta img
+#IMG_FOLDER = os.path.join('static','img')
+#app.config['UPLOAD_FOLDER'] = IMG_FOLDER
 
+#
 # MySQL connection
-app.config['MYSQL_HOST'] = '34.203.40.13'
+app.config['MYSQL_HOST'] = '34.224.103.212'
 app.config['MYSQL_USER'] = 'support'
 app.config['MYSQL_PASSWORD'] = 'sistemas20.'
 app.config['MYSQL_DB'] = 'Shio_shop'
@@ -14,6 +19,14 @@ mysql = MySQL(app)
 app.secret_key = 'mysecretkey'
 
 @app.route('/')
+def home():
+    #añadir la lista de imagenes
+    #IMG_LIST = os.listdir('static/img')
+    #IMG_LIST = ['img/' + i for i in IMG_LIST]
+    #
+    return render_template('home.html')
+
+@app.route('/registro')#@app.route('/')
 def Index():
     cur = mysql.connection.cursor()
     cur.execute('SELECT * FROM clientes')

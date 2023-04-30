@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/home.css')}}">
+    <title>ChioShop</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.png')}}" alt="Logo de la marca">
+            
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Lanzamientos</a></li>
+                <li><a href="#">Anillos</a></li>
+                <li><a href="#">Collares </a></li>
+                <li><a href="#">Aretes</a></li>
+            </ul>
+        </nav>
+        <a href="/registro" class="btn"><button>Registro</button ></a>
+    </header>
+    <div class="texto-centro">
+        <h1>Elige tu accesorio <span class="texto-subrayado">favorito</span></h1>
+    </div>
+    <div class="contenedor">
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/imagen1.jpg')}}" alt="imagen 1">
+            <h4>Collar</h4>
+            <p>Collar elefante, material de acero</p>
+            <input class="btn" type="button" value=" S/ 30 ">    
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/imagen2.jpg')}}" alt="imagen 2">
+            <h4>Piercing</h4>
+            <p>Edicion Hello Kitty, piercing de ombligo</p>
+            <input class="btn" type="button" value=" S/ 20 "> 
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/imagen3.jpg')}}" alt="imagen 3">
+            <h4>Collar</h4>
+            <p>Collar de hada, material de acero</p>
+            <input class="btn" type="button" value=" S/ 30 "> 
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/imagen4.jpg')}}" alt="imagen 4">
+            <h4>Piercing</h4>
+            <p>Piercing de ombligo, material de acero</p>
+            <input class="btn" type="button" value=" S/ 20 "> 
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/imagen5.jpg')}}" alt="imagen 5">
+            <h4>Collar</h4>
+            <p>Collar queen, material de acero</p>
+            <input class="btn" type="button" value=" S/ 30 "> 
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/imagen6.jpg')}}" alt="imagen 6">
+            <h4>Piercing</h4>
+            <p>Piercing de ombligo, material de acero</p>
+            <input class="btn" type="button" value=" S/ 20 "> 
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
