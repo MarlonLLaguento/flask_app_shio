@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #FACAF3;
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 150px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    /*transform: scale(1.1);*/
+    text-decoration: underline overline  #D889FA;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #1B1D14;
+    text-decoration: none;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background: #1B1D14;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color:  #D889FA;
+    color: #1B1D14;
+    transform: scale(1.2);
+}
+
+.texto-centro{
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.texto-centro h1{
+    font-size: 30px;
+}
+
+.texto-centro h1 .texto-subrayado{
+    font-size: 30px;
+    background:#C75BFA;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.contenedor .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: white;
+}
+
+.contenedor .card:hover{
+    transform: translateY(-15px);
+}
+
+.contenedor .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.contenedor .card h4{
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contenedor .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-block-end: 20px;
+}
+
+/*.contenedor .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}*/
+
+.contenedor .card .btn{
+    width: 100%;
+    border-radius: none;
+    border: none;
+    height: 35px;
+    margin-top: 40px; 
+    background-color: black;
+    color: white;
+
+}
